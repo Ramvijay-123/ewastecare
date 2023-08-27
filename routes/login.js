@@ -5,7 +5,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 /* GET users listing. */
 router.post("/", async function (req, res, next) {
- 
+   
   const data = await User.findOne({
     emailid: req.body.email,
   });
@@ -28,9 +28,10 @@ router.post("/", async function (req, res, next) {
   res.render('login',{message:'Email not found'})
   }
 });
-const sendToken = (data, statusCode, res) => {
 
-  const token = jwt.sign( {id: data._id }, "dfsajkalfjalkfjdsaldjflj", {
+const sendToken = (data, statusCode, res) => {
+ 
+  const token = jwt.sign( {id: data._id },process.env.TOKENCODE, {
     expiresIn: "5d",
   });
 
@@ -46,3 +47,4 @@ const sendToken = (data, statusCode, res) => {
 };
 
 module.exports = router;
+
