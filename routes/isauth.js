@@ -12,7 +12,7 @@ const auth =async function(req,res,next){
      res.redirect('/login');
     }
     else{
-        const decodedData = jwt.verify(token, "dfsajkalfjalkfjdsaldjflj");
+        const decodedData = jwt.verify(token, process.env.TOKENCODE);
         const data=await User.findById(decodedData.id);
         if(!data)
         res.redirect('login')
@@ -22,4 +22,3 @@ const auth =async function(req,res,next){
  
 }
 module.exports=auth
-
