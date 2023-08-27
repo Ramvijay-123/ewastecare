@@ -1,0 +1,37 @@
+<head>
+<link rel="stylesheet" href="/stylesheets/cart.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<title>Cart</title>
+</head>
+<body>
+
+    <h1>Your Cart</h1>
+    <div class="cart-items" id="cart-items">
+        <!-- Cart items idhar add hone chaiye -->
+    </div>
+    <div class="cart-total">
+        <h3>Total: ₹<span id="cart-total"><%=subtotal %></span></h3>
+        <a href="/shipping">  <button id="checkout-btn"  >Checkout</button></a>
+      
+    </div>
+</div>
+<% data.forEach(function(item) { %>
+  <div class="cart-container">
+    <img src="<%=item.img %>" alt="Product 2" width="100px" height="100px">
+    
+    <div class="cart-total">
+          <h2><%=item.nameOfProduct %></h2>
+          <p><%=item.discription %></p>
+          <span class="price">₹<%=item.price %></span>
+          <button class="buy-button">Buy Now</button>
+      </div>
+ </div>
+<% }); %> 
+<script>
+     
+      (function (){
+       
+      console.log(subtotal);
+  })()
+</script>
+<script src="/stylesheets/cart.js"></script>

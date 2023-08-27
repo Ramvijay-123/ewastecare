@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conform</title>
+</head>
+<style>
+    .conformcontainer{
+        width: 100vb;
+        height: 100vh;
+        display: flex;
+  
+        align-items: center;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .conform{
+        width: 600px;
+        height: 300px;
+        padding: 30px 30px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 153, 255);
+       
+      
+     
+    }
+     .conform >a >button{
+        margin-top: 30px;
+        text-decoration: none;
+        width: 100px;
+        height: 50px;
+        border: 2px solid white;
+        border-radius: 5px;
+        background-color: rgb(255, 77, 28);
+        color: aliceblue;
+        margin-left: auto;
+     }
+     .conform >a >button:hover{
+      background-color: rgb(253, 253, 253);
+      border: 2px solid rgb(255, 47, 47);
+      color: rgb(255, 59, 59);
+   
+     }
+</style>
+<body>
+    <%- include('./header.ejs'); %>
+    <div class="conformcontainer">
+   <div class="conform">
+     <h2> Your order succeffully place</h2>
+     <h2>You get order as soon as possible</h2>
+      <a href="dashBoard"><button>DashBoard</button></a> 
+      <a href="product"><button>product</button></a> 
+</div>
+</body>
+</html>

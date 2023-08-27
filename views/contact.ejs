@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <h1>Get in touch</h1>
+    <div class="container">
+        <div class="messageForm">
+            <h3>Send us a message</h3>
+            <input class="name" type="text" placeholder="Your Name">
+            <input class="email" type="text" placeholder="Email Address">
+            <textarea class="msg" placeholder="Message"></textarea>
+            <button class="btn">Send</button>
+        </div>
+        <div class="info">
+            <h3>Chat with us</h3>
+            <p>If you'd prefer to chat in real time with our support<br/>team,we're online Monday to Friday whatever your <br/>time zone.</p>
+            <button>Start a conversation</button>
+            <div class="socials">
+                <h3>Follow us</h3>
+                <a href="#"><img src="/images/twitter.png"></a>
+                <a href="#"><img src="/images/facebook.png"></a>
+                <a href="#"><img src="/images/linkedin.png"></a>
+                <a href="#"><img src="/images/instagram.png"></a>
+            </div>
+            <div class="address">
+                <h3>Our address</h3>
+                <p>Geckoboard, 4th Floor, AGH, Pheonix Market City<br/>Kurla(W), Mumbai, Maharashtra.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".btn").onclick=function()
+        {
+            document.querySelector(".name").value="";
+            document.querySelector(".email").value="";
+            document.querySelector(".msg").value="";
+        }
+    </script>
+</body>
+</html>

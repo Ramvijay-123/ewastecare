@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/sellProduct.css">
+</head>
+<body>
+    
+    <%- include('./header.ejs'); %>
+
+    <form action="/sell" method="post" enctype="multipart/form-data">
+        <div class="sell">
+            <h1>Sell your product</h1>
+        </div>
+   
+        <input type="text" name="nameOfProduct" placeholder="Name of product" required>
+         <input type="file" name="image" id="" placeholder="image" required>
+        <input type="number" name="price" placeholder="price" required>
+    
+        <select name="select" id="" >
+            <option value="recycle">Recycle</option>
+            <option value="sell">Sell</option>
+        </select>
+       <textarea name="description" id="" cols="10" rows="5"  placeholder="details"></textarea>
+         <input type="submit" value="Submit" >
+    </form>
+    <%- include('./footer.ejs'); %>
+</body>
+</html>

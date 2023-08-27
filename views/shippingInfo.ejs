@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            transition: transform 0.2s ease-in-out;
+            text-align: center;
+        }
+
+        .form-container:hover {
+            transform: scale(1.02);
+        }
+
+        .form-heading {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #e74c3c;
+            position: relative;
+        }
+
+        .form-heading::after {
+        content: "";
+        display: block;
+        width: 400px;
+        height: 4px;
+        background-color: #e74c3c;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 95%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus {
+            background-color: #e0e0e0;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="form-heading">Shipping Form</h1>
+        <form action="/shippingForm" method="post">
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="country" placeholder="Country">
+            <input type="text" name="state" placeholder="State">
+            <input type="text" name="city" placeholder="City">
+            <input type="number" name="pincode" placeholder="Pincode">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

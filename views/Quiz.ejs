@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Waste Quiz</title>
+    <link rel="stylesheet" href="/stylesheets/quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>E-Waste Management Quiz</h1>
+        <div class="question"  id="question-text">
+            <p id="question-text">Question goes here...</p>
+        </div>
+        <div class="answers" id="answers-container">
+            <button class="answer" onclick="checkAnswer(0)">Answer 1</button>
+            <button class="answer" onclick="checkAnswer(1)">Answer 2</button>
+            <button class="answer" onclick="checkAnswer(2)">Answer 3</button>
+            <button class="answer" onclick="checkAnswer(3)">Answer 4</button>
+        </div>
+        <p id="result"></p>
+        <button id="next-button" onclick="nextQuestion()" style="display: none;">Next</button>
+        <p id="score"></p>
+    </div>
+    <script src="/javascripts/quiz.js"></script>
+    <script src="/javascripts/confetti.js"></script>
+</body>
+</html>
