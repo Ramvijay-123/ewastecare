@@ -5,17 +5,26 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 /* GET users listing. */
 router.post("/", async function (req, res, next) {
+ 
   const data = await User.findOne({
     emailid: req.body.email,
   });
-
+ 
   if (data) {
+    
     const isCorrectpassword = await bcrypt.compare(
       req.body.password,
       data.password
     );
-    sendToken(data, 200, res);
-  } else {
+  
+    if(isCorrectpassword){
+      sendToken(data, 200, res);
+    }
+    else{
+      res.render('login',{message:'Email password not correct'});
+    }
+  }
+   else {
   res.render('login',{message:'Email not found'})
   }
 });
