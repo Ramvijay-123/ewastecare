@@ -30,7 +30,7 @@ router.post('/', async function(req, res, next) {
 });
 const sendToken = (data, statusCode, res) => {
 
-  const token = jwt.sign( {id: data._id }, "dfsajkalfjalkfjdsaldjflj", {
+  const token = jwt.sign( {id: data._id },process.env.TOKENCODE, {
     expiresIn: "5d",
   });
    // options for cookie
