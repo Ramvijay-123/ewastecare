@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-background: rgb(4, 180, 255);
+    --object-clour: rgba(245, 245, 245, 0.903);
+    --text-colur: white;
+}
+
+body {
+    background: #00ffff;
+}
+
+.first-sec {
+    height: 100vh;
+
+
+}
+
+
+.about-sec h1 {
+    text-align: left;
+    font-size: 70px;
+    margin-left: 160px;
+    font-family: 'DM Serif Display', serif;
+}
+
+.box {
+    margin-left: 130px;
+    margin-top: -7px;
+    width: 424px;
+    border-radius: 43%;
+    height: 5px;
+    background-color: var(--object-clour);
+    position: relative;
+}
+
+.box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background-color: white;
+}
+
+.circle {
+    width: 737.5px;
+    margin-left: 21.59cm;
+    height: 702px;
+    margin-top: -57px;
+    background-color: var(--object-clour);
+    border-radius: 0 0 499px 499px;
+    transform: rotate(90deg) scaleX(-1);
+}
+
+.square-box {
+    width: 789px;
+    height: 598px;
+    border: 1px solid --main-background;
+    margin-left: 25px;
+}
+
+.intro {
+    margin-top: -559px;
+    font-size: 20px;
+    color: currentColor;
+    text-align: justify;
+    font-family: 'Karla', sans-serif;
+}
+
+.second-sec {
+    height: 100vh;
+
+}
+
+.container {
+    width: 1200px !important;
+    padding: 0 !important;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (min-width: 992px) and (max-width: 1439px) {
+        max-width: 1279px !important;
+        padding: 0 !important;
+        margin: 0 80px !important;
+        width: auto !important;
+    }
+
+    @media screen and (max-width: 991px) {
+        max-width: 959px !important;
+        margin: 0 16px !important;
+        padding: 0 !important;
+        width: auto !important;
+    }
+}
+
+.line {
+    margin-left: 402px;
+    margin-top: -38px;
+    width: 365px;
+    border-radius: 43%;
+    height: 5px;
+    background-color: var(--object-clour);
+    position: relative;
+}
+
+.line::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background-color: white;
+}
+
+
+
+.image-sec {
+    margin-left: 193px;
+    margin-top: 157px;
+}
+
+.line-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.line-1 {
+    width: 100%;
+    height: 2px;
+    margin-top: -250px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+    animation: expandAnimation 3s forwards infinite;
+}
+
+@keyframes expandAnimation {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.line-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.line-2 {
+    width: 100%;
+    height: 2px;
+    margin-top: 600px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+    animation: expandAnimation 3s forwards infinite;
+}
+
+@keyframes expandAnimation {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+
+.line-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.line-3 {
+    width: 100%;
+    height: 2px;
+    margin-top: -255px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: right center;
+    animation: moveAnimation 3s forwards infinite;
+}
+
+@keyframes moveAnimation {
+    0% {
+        transform: scaleX(0) translateX(100%);
+    }
+
+    100% {
+        transform: scaleX(1) translateX(0%);
+    }
+}
+
+
+.line-4 {
+    width: 100%;
+    height: 2px;
+    margin-top: 605px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: right center;
+    animation: moveAnimation 3s forwards infinite;
+}
+
+@keyframes moveAnimation {
+    0% {
+        transform: scaleX(0) translateX(100%);
+    }
+
+    100% {
+        transform: scaleX(1) translateX(0%);
+    }
+}
+
+.third-sec {
+    height: 127vh;
+}
+
+.image-2 {
+    margin-top: 274px;
+    margin-left: 321px;
+}

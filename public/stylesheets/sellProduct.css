@@ -1,0 +1,97 @@
+
+
+ form >div {
+    text-align: center;
+    padding: 10px;
+    color: #fffbfb;
+      margin-bottom: 30px;
+    background-color: #3498db;
+}
+
+form {
+    margin:50px auto;
+    max-width: 600px;
+   
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px ;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+form:hover {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+form input[type="text"],
+form input[type="number"],
+form select,
+form textarea,
+form input[type="file"],
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    padding-right: 2px;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form select:focus,
+form textarea:focus,
+form input[type="file"]:focus {
+    border-color: #3498db;
+}
+
+form input[type="text"]:hover,
+form input[type="number"]:hover,
+form select:hover,
+form textarea:hover,
+form input[type="file"]:hover {
+    background-color: #f0f0f0;
+}
+
+form select {
+    appearance: none;
+    -webkit-appearance: none;
+    background: url('arrow-down.png') no-repeat right;
+    background-size: 20px;
+    padding-right: 40px;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 130px; /* Set a minimum height to prevent very small textareas */
+}
+
+form input[type="submit"] {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+form input[type="submit"]:hover {
+    background-color: #d35400;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
