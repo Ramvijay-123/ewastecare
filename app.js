@@ -61,19 +61,19 @@ const storage = multer.diskStorage({
 })
 const upload = multer({ storage: storage })
 
-app.use('/', indexRouter);
+app.use('/',indexRouter);
 app.use('/registerUser',registerRoute);
 app.use('/loginUser',loginRoute);
 app.use('/logout',logoutRoute);
-app.use('/dashBoard',dashBoardRoute);
-app.use('/shippingForm',shippingFormRouter);
+app.use('/dashBoard',isauth,dashBoardRoute);
+app.use('/shippingForm',isauth,shippingFormRouter);
 app.get('/login',function(req,res){
   res.render('login',{message:""})
 });
 app.get('/shipping',function(req,res){
   res.render('shippingInfo')
 });
-app.use('/editProfile',editRoute);
+app.use('/editProfile',isauth,editRoute);
 app.use('/order',isauth,orderRouter);
 app.use('/sell',upload.single('image'),sellRoute);
 app.get('/edit',function(req,res){
@@ -126,3 +126,4 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
