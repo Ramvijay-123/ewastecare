@@ -7,8 +7,12 @@ footer{
     color: aliceblue;
     flex-wrap: nowrap;
     overflow: auto;
-  
   }
+
+#qr{
+    height: 150px;
+}
+
   footer >div{
     flex-direction: column;
     margin: 3vmax;
