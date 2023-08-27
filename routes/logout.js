@@ -9,7 +9,7 @@ router.get('/',async function(req, res, next) {
         httpOnly: true,
       });
    
-   res.render('login',{message:'logout suceesfully'});
+   res.render('login',{message:'logout successfully'});
   
 });
 
