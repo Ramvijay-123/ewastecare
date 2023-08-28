@@ -22,6 +22,7 @@ var messageRoute=require('./routes/message')
 var orderRouter=require('./routes/order')
 var bootRouter=require('./controller/chatboot')
 var shippingFormRouter=require('./routes/shippingForm')
+var contactRoute=require('./routes/contact')
 var app = express();
 var isauth=require('./routes/isauth');
 var debug = require('debug')('e-wastecare:server');
@@ -32,7 +33,7 @@ const connectDb = require('./config/connectDb');
  * Get port from environment and store in Express.
  */
 connectDb();
-var port =(process.env.PORT || '3000');
+var port =(process.env.PORT || '4000');
 app.set('port', port);
 
 /**
@@ -102,12 +103,12 @@ app.use('/product',productRoute);
 app.use('/message',messageRoute);
 app.use('/bot',bootRouter);
 app.use('/productRecycle',productRecycleRoute);
+
 app.get('/blog',function(req,res){
   res.render('blog')
 });
-app.get('/contact',function(req,res){
-  res.render('contact')
-});
+
+app.use('/contact',contactRoute);
 app.get('/chatboot',function(req,res){
   res.render('chatboot')
 });
@@ -135,5 +136,3 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
-
-
