@@ -17,8 +17,10 @@ var cartRoute = require('./routes/cart');
 var cartItemRoute = require('./routes/cartItem');
 var productRoute = require('./routes/product');
 var productRecycleRoute = require('./routes/productRecycle');
-var checkoutRouter=require('./routes/checkout')
+var checkoutRouter=require('./routes/checkout');
+var messageRoute=require('./routes/message')
 var orderRouter=require('./routes/order')
+var bootRouter=require('./controller/chatboot')
 var shippingFormRouter=require('./routes/shippingForm')
 var app = express();
 var isauth=require('./routes/isauth');
@@ -97,6 +99,8 @@ app.use('/addToCart',isauth ,cartRoute
 app.use('/cart',isauth,cartItemRoute
 );
 app.use('/product',productRoute);
+app.use('/message',messageRoute);
+app.use('/bot',bootRouter);
 app.use('/productRecycle',productRecycleRoute);
 app.get('/blog',function(req,res){
   res.render('blog')
@@ -104,15 +108,20 @@ app.get('/blog',function(req,res){
 app.get('/contact',function(req,res){
   res.render('contact')
 });
+app.get('/chatboot',function(req,res){
+  res.render('chatboot')
+});
 app.use('/checkout',isauth,checkoutRouter);
 
 app.get('/about',function(req,res){
   res.render('about')
 });
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
 });
+
 
 // error handler
 app.use(function(err, req, res, next) {
@@ -126,4 +135,5 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
 
