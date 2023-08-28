@@ -9,6 +9,30 @@
     <title>E-Waste Management</title>
 </head>
 <body>
+    <div class="chatbot-container">
+        <div id="chatbot-button" class="chatbot-button">
+            <span>Chat with AI</span>
+        </div>
+        <div id="chatbot-window" class="chatbot-window">
+            <div class="chatbot-header">
+                E-Waste Care
+                <span id="close-chatbot" class="close-button">×</span>
+            </div>
+            <div id="chatbot-messages" class="chatbot-messages"></div>
+            <div class="suggested-questions">
+                <p>Suggested Questions:</p>
+                <ul id="suggested-list">
+                    <li>1. What is e-waste?</li>
+                    <li>2. Why is e-waste management important?</li>
+                    <li>3. How can I dispose of e-waste?</li>
+                </ul>
+            </div>
+            <div class="user-input-container">
+                <input id="user-input" class="user-input" type="text" placeholder="Type your message...">
+                <button id="send-button" class="send-button">Send</button>
+            </div>
+        </div>
+    </div>
    
 
     <%- include('./header.ejs'); %>
