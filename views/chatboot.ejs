@@ -1,0 +1,93 @@
+<link rel="stylesheet" href="/stylesheets/chatboot.css">
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<div class="ChatWindow">
+  
+    <div class="ChatItem ChatItem--customer">
+      <div class="ChatItem-meta">
+        <div class="ChatItem-avatar">
+          <img class="ChatItem-avatarImage" src="https://image.ibb.co/eTiXWa/avatarrobot.png">
+        </div>
+      </div>
+      <div class="ChatItem-chatContent">
+        <div class="ChatItem-chatText">Welcome to E-WasteCare's Chat Assitance</div>
+        <div class="ChatItem-timeStamp"><strong>Chat Bot</strong> • Today </div>
+      </div>
+    </div>
+    
+  
+   
+    <div class="ChatItem ChatItem--customer">
+      <div class="ChatItem-meta">
+        <div class="ChatItem-avatar">
+          <img class="ChatItem-avatarImage" src="https://image.ibb.co/eTiXWa/avatarrobot.png">
+        </div>
+      </div>
+      <div class="ChatItem-chatContent">
+        <div class="ChatItem-chatText">I am the AI Made By BitByteCoders</div>
+        <div class="ChatItem-timeStamp"><strong>Chat Bot</strong> • Today 05:53</div>
+      </div>
+    </div>
+   
+    <div class="ChatItem ChatItem--customer">
+      <div class="ChatItem-meta">
+        <div class="ChatItem-avatar">
+          <img class="ChatItem-avatarImage" src="https://image.ibb.co/eTiXWa/avatarrobot.png">
+        </div>
+      </div>
+      <div class="ChatItem-chatContent">
+        <div class="ChatItem-chatText">How can I help you</div>
+        <div class="ChatItem-timeStamp"><strong>Chat Bot</strong> • Today </div>
+      </div>
+    </div>
+    
+    
+   
+  <div class="ChatInput is-hidey">
+      <div class="ChatInput-input" contenteditable="true" placeholder="Type your message here..."></div>
+  </div>
+<script>
+   ( async function() {
+    
+  var $ChatInput;
+
+  $ChatInput = $('.ChatInput-input');
+
+  $ChatInput.keyup( async function(e) {
+    var $this, newText;
+    if (e.shiftKey && e.which === 13) {
+      e.preventDefault();
+      return false;
+    }
+    $this = $(this);
+    if (e.which === 13) {
+       
+      newText = $this.html();
+      const message=$this.text();
+     
+        
+        const data=  await axios.post('/bot',{message:message});
+        console.log(data.data)
+       $this.html('');
+      $('.ChatWindow').append('<div class="ChatItem ChatItem--expert"> <div class="ChatItem-meta"> <div class="ChatItem-avatar"> <img class="ChatItem-avatarImage" src="https://randomuser.me/api/portraits/women/0.jpg"> </div> </div> <div class="ChatItem-chatContent"> <div class="ChatItem-chatText">' + newText + '</div> <div class="ChatItem-timeStamp"><strong>Me</strong> · Today 05:49</div> </div> </div>');
+      $('.ChatWindow').append(`
+      <div class="ChatItem ChatItem--customer">
+      <div class="ChatItem-meta">
+        <div class="ChatItem-avatar">
+          <img class="ChatItem-avatarImage" src="https://image.ibb.co/eTiXWa/avatarrobot.png">
+        </div>
+      </div>
+      <div class="ChatItem-chatContent">
+        <div class="ChatItem-chatText">${data.data}</div>
+        <div class="ChatItem-timeStamp"><strong>Chat Bot</strong> • Today 05:49</div>
+      </div>
+    </div>`);
+    
+      return $('.ChatWindow').animate({
+        scrollTop: $('.ChatWindow').prop("scrollHeight")
+      }, 500);
+    }
+  });
+
+}).call(this);
+</script>
