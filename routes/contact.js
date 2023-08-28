@@ -5,7 +5,7 @@ var message=require('../model/messageModel');
 router.get('/', async function(req, res, next) {
     const data= await message.find();
     res.render('contact',{ data:data });
-    console.log("hello")
+
 });
 
 
