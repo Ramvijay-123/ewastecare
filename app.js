@@ -92,7 +92,7 @@ app.get('/Quiz',function(req,res){
   res.render('Quiz')
 });
 app.use('/sellProduct',isauth,(req,res)=>{
-  res.render('sellproduct.ejs')
+  res.render('sellproduct')
 }
 );
 app.use('/addToCart',isauth ,cartRoute
