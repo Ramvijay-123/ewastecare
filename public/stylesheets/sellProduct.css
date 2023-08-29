@@ -95,3 +95,8 @@ footer {
     background-color: #333;
     color: #fff;
 }
+@media (max-width: 768px) {
+    h1{
+        font-size: medium;
+    }
+}
