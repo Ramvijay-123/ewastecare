@@ -186,3 +186,8 @@ footer {
 .add-to-cart-button:hover {
     background-color: #d35400;
 }
+@media (max-width: 768px) {
+    h1{
+        font-size: medium;
+    }
+}
