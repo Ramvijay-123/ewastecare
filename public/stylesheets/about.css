@@ -6,7 +6,7 @@ body {
     font-size: 12px;
     font-family: "Roboto", sans-serif;
     color: black;
-    background: url('./images/snapedit_1693331893922.png') no-repeat center center fixed;
+    background: url('../images/snapedit_1693331893922.png') no-repeat center center fixed;
     background-size: cover;
 }
 
