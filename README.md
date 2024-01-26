@@ -20,7 +20,7 @@ Have electronic items you no longer need? Sell them through E-WasteCare's market
 ### 2. DashBoard💰
 List of product which you buy or sell
 
-<img src ="images/dashborad.png" width="1200px" height="450px" ><br>
+<img src ="images/dashboard.png" width="1200px" height="450px" ><br>
 
 ![Sell E-Waste](sell.png)
 *💸 Turn your e-waste into extra cash while helping the planet!*
