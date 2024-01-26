@@ -201,14 +201,14 @@ main {
 .art-showcase {
     margin-top: 40px;
     padding: 20px;
-    background-color: #f8f8f8;
+   
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .art-showcase:hover {
-    transform: translateY(-5px);
+    transform: translatex(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -232,15 +232,17 @@ main {
 }
 
 .art-piece img {
-    max-width: 120px;
+
     margin-right: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    width: 100vh;
+   
 }
 
 .art-piece:hover img {
-    transform: scale(1.05);
+    transform: scale(1.01);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
