@@ -26,19 +26,19 @@ We host electrifying events and engaging workshops to empower communities with i
 ### 4. Interactive Quiz 🧠
 Challenge your knowledge about e-waste and recycling with our captivating quizzes. Learn and have fun while making a difference!
 
-<img src ="quiz.gif" width="1200px" height="450px" ><br>
+<img src ="images/quiz.png" width="1200px" height="450px" ><br>
 *🧐 Test your eco-savviness and unlock the secrets of responsible e-waste handling!*
 
 ### 5. Blogs on E-Waste 📚
 Stay informed with our treasure trove of regularly updated blogs, featuring pearls of wisdom from experts in the field of e-waste management and sustainable living.
 
-![Blogs on E-Waste](https://payu.in/blog/wp-content/uploads/2019/01/Blog-Cover.gif)<br>
+![Blogs on E-Waste](images/dashborad(2).png<br>
 *📖 Explore informative articles that guide you toward a greener lifestyle!*
 
 ### 6. Innovative Ideas Submission 💡
 Unleash your creativity! Share your ingenious ideas for e-waste management and earn a chance to showcase your brilliance on our platform.
 
-![Innovative Ideas](https://www.meetinvr.com/wp-content/uploads/2021/11/AdobeStock_222211654-1-scaled.jpeg)<br>
+![Innovative Ideas](/images/contact us.png)<br>
 *🌈 Your innovative ideas could be the spark that revolutionizes e-waste management!*
 
 ## 🚀 Get Involved
