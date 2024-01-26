@@ -17,11 +17,13 @@ Have electronic items you no longer need? Sell them through E-WasteCare's market
 ![Sell E-Waste](sell.png)
 *💸 Turn your e-waste into extra cash while helping the planet!*
 
-### 3. Organize Events 🎉
-We host electrifying events and engaging workshops to empower communities with insights into the impact of e-waste on the environment and effective management strategies.
+### 2. DashBoard💰
+List of product which you buy or sell
 
-<img src ="https://brandstamp.media/wp-content/uploads/2019/11/finaldisk.gif" width="1200px" height="450px" ><br>
-*🌟 Join us for interactive sessions that light up the path to sustainable living!*
+<img src ="images/dashborad.png" width="1200px" height="450px" ><br>
+
+![Sell E-Waste](sell.png)
+*💸 Turn your e-waste into extra cash while helping the planet!*
 
 ### 4. Interactive Quiz 🧠
 Challenge your knowledge about e-waste and recycling with our captivating quizzes. Learn and have fun while making a difference!
