@@ -8,7 +8,7 @@ E-WasteCare is your **eco-friendly haven** for responsible electronic waste mana
 ### 1. Product Recycling ♻️
 Dispose of your old electronic devices responsibly through our efficient recycling process. We ensure that valuable materials are recovered and harmful elements are handled safely.
 
-![Product Recycling](recycle.gif) <br>
+![Product Recycling](images/product.png) <br>
 *🚀 Witness your old gadgets transform into something new!*
 
 ### 2. Sell E-Waste Products 💰
