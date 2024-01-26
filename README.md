@@ -32,7 +32,7 @@ Challenge your knowledge about e-waste and recycling with our captivating quizze
 ### 5. Blogs on E-Waste 📚
 Stay informed with our treasure trove of regularly updated blogs, featuring pearls of wisdom from experts in the field of e-waste management and sustainable living.
 
-![Blogs on E-Waste](images/dashborad (2).png<br>
+<img src ="images/dashboard (2).png" width="1200px" height="450px" ><br>
 *📖 Explore informative articles that guide you toward a greener lifestyle!*
 
 ### 6. Innovative Ideas Submission 💡
