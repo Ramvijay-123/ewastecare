@@ -1,4 +1,4 @@
-# 🌱 Welcome to E-WasteCare by BitByte Coders 🌍
+# 🌱 Welcome to E-WasteCare 🌍
 
 
 E-WasteCare is your **eco-friendly haven** for responsible electronic waste management. Our platform offers a diverse range of services and resources to promote sustainable e-waste practices and raise awareness about the importance of proper disposal. ♻️
