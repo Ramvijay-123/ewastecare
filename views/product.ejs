@@ -100,28 +100,20 @@
     </main>
 
 <script>
-  async function add() {
-    // Check if the user is logged in
-    const isLoggedIn = /* Add logic to check if the user is logged in */;
-
-    if (!isLoggedIn) {
-      // If not logged in, show an alert or redirect to the login page
-      JSAlert.alert("<code>Please login to add items to the cart.</code>", null, JSAlert.Icons.Warning).dismissIn(3000);
-    } else {
-      // If logged in, proceed with adding the item to the cart
-      const config = { headers: { "Content-Type": "application/json" } };
-      const product = {
-        nameOfProduct: document.querySelector('.modal-product-name').textContent,
+ async function add(){
+    const config = { headers: { "Content-Type": "application/json" } };
+    const product={
+        nameOfProduct:   document.querySelector('.modal-product-name').textContent,
         img: document.querySelector('.modal-image').src,
-        price: document.querySelector('.modal-product-price').textContent,
-        discription: document.querySelector('.modal-product-description').textContent,
-      };
-
-      const data = await axios.post('/addToCart', product);
-
-      JSAlert.alert("<code>Item added successfully.</code>", null, JSAlert.Icons.Success).dismissIn(1000 * 1);
+        price:  document.querySelector('.modal-product-price').textContent,
+        discription:document.querySelector('.modal-product-description').textContent,
+ 
     }
-  }
+    const data=  await axios.post('/addToCart',product);
+   
+    JSAlert.alert("<code >item added succesfully </code >",null,JSAlert.Icons.Success).dismissIn(1000 * 1);
+       
+     }
 </script>
     <script src="/javascripts/product.js"></script>
 </body>
