@@ -82,6 +82,13 @@ app.use('/sell',upload.single('image'),sellRoute);
 app.get('/edit',function(req,res){
   res.render('editProfile')
 });
+app.get('/chatroom',function(req,res){
+  res.render('chatroom')
+});
+app.get('/ch',function(req,res){
+  res.render('ch')
+});
+
 app.get('/register',function(req,res){
   res.render('registers')
 });

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ChatRoom</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/x-icon" href="icons/logo.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='/stylesheets/lobby.css'>
+</head>
+
+
+<body>
+    <main id="lobby-container">
+        <div id="form-container">
+            <div id="form__container__header">
+                <p>⚡Create or 💬Join a Room</p>
+            </div>
+            <p id="line">👀 Enter Invite Code</p>
+            <div id="form__content_wrapper">
+                <form id="join-form">
+                    <input type="text" name="invite_link" id="invite_link" required /> <!-- added id attribute -->
+                    <input type="submit" value="Join Room" />
+                </form>
+            </div>
+            <a href="ch.ejs">ram</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () { // wait for the DOM to be fully loaded
+            let form = document.getElementById('join-form');
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                let inviteCode = document.getElementById('invite_link').value; // corrected variable name
+                window.location.href = `ch?room=${inviteCode}`; // corrected window.location
+            });
+        });
+    </script>
+</body>
+
+</html>
+

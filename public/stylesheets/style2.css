@@ -11150,17 +11150,7 @@ code {
 }
 
 /* Cards */
-.card {
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -ms-box-shadow: none;
-  transition: background 0.25s ease;
-  -webkit-transition: background 0.25s ease;
-  -moz-transition: background 0.25s ease;
-  -ms-transition: background 0.25s ease;
-  border: none;
-}
+
 
 .card.tale-bg {
   background: #DAE7FF;
@@ -11672,7 +11662,7 @@ code {
   -o-transform: scale(1);
   transform: scale(1);
 }
-}
+
 
 /* Dropdowns */
 .dropdown .dropdown-toggle:after {
