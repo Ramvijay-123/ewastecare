@@ -1,10 +1,12 @@
-const mongoose=require('mongoose');
-const connectDb=()=>{
-    mongoose.connect("mongodb+srv://bitbytecoders:bitbytecoder123@cluster0.shit8by.mongodb.net/ewaste").then((data,err)=>{
+const mongoose = require('mongoose');
+const dotenv = require('dotenv');
+dotenv.config({ path: './config.env' });
+const connectDb = () => {
+    mongoose.connect(process.env.MONGODB_URI)
+        .then((data) => {
+            console.log(`Mongodb is connected on port ${data.connection.port}`);
+        })
+        .catch(err => console.log("Database connection error: ", err));
+};
 
-    if(err) console.log(err);
-    else    console.log(`Mongodb  is connected ${data.connection.port}`);
-}
-
-)}
-module.exports=connectDb
+module.exports = connectDb;
