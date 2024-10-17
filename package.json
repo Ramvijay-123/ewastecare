@@ -1,12 +1,12 @@
 {
   "name": "e-wastecare",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "nodemon app.js"
   },
   "dependencies": {
-    "axios": "0.0.1-security",
+    "axois": "0.0.1-security",
     "bcrypt": "^5.1.1",
     "bootstrap-icons": "^1.11.3",
     "connect-flash": "^0.1.1",
@@ -19,7 +19,7 @@
     "express-session": "^1.17.3",
     "http-errors": "~1.6.3",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^1.0.0",
+    "moongose": "^1.0.0",
     "morgan": "~1.9.1",
     "multer": "^1.4.5-lts.1",
     "node": "^14.5.1",
@@ -31,5 +31,5 @@
   "devDependencies": {},
   "author": "",
   "license": "ISC",
-  "description": "This website helps to clean E-waste"
-}
+  "description": "This website help to clean E-waste"
+} 
