@@ -13,8 +13,6 @@ body {
     background-image: linear-gradient( violet,rgb(59, 174, 202));
 }
 
-
-/* Base styling */
 header {
  
     color: #fff;
@@ -63,12 +61,6 @@ nav a:hover {
     border-bottom: 3px solid  #208cff;
    
 }
-
-/* Icon styling */
-
-
-/* Adding icons */
-
 
 
 #select{
@@ -158,8 +150,6 @@ main {
 }
 
 
-
-/* Upcoming Events styling */
 .upcoming-events {
     margin-top: 40px;
     padding: 20px;
@@ -196,8 +186,6 @@ main {
     font-size: 16px;
     color: #777;
 }
-
-/* Art Showcase styling */
 .art-showcase {
     margin-top: 40px;
     padding: 20px;
@@ -240,7 +228,7 @@ main {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    width: 100vh;
+    width: auto;
    
 }
 
