@@ -5,7 +5,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 const dotenv=require('dotenv')
 dotenv.config({path:"config/config.env"})
-
+const axios = require('axios');
 var indexRouter = require('./routes/index');
 var registerRoute = require('./routes/register');
 var loginRoute = require('./routes/login');
@@ -29,25 +29,19 @@ var debug = require('debug')('e-wastecare:server');
 var http = require('http');
 
 const connectDb = require('./config/connectDb');
-/**
- * Get port from environment and store in Express.
- */
 connectDb();
 var port =(process.env.PORT || '4000');
 app.set('port', port);
 
-/**
- * Create HTTP server.
- */
 
 var server = http.createServer(app);
-server.listen(port);
+ server.listen(port, () => {
+  keepAlive();
+  console.log(`Server running on port ${port}`);
 
-
-// view engine setup
+});
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-
 app.use(express.json());
 app.use(express.urlencoded({limit:'50mb', extended: true }));
 app.use(cookieParser());
@@ -88,7 +82,18 @@ app.get('/chatroom',function(req,res){
 app.get('/ch',function(req,res){
   res.render('ch')
 });
-
+function keepAlive() {
+  const url = `https://e-wastecare.onrender.com/product`;
+  setInterval(async () => {
+    try {
+      console.log('KeepAlive ping successful');
+      await axios.get(url);
+    
+    } catch (error) {
+      console.error('Error pinging the server:', error);
+    }
+  },10*10*1000); 
+}
 app.get('/register',function(req,res){
   res.render('registers')
 });

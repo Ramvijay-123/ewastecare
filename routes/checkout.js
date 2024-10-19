@@ -1,9 +1,8 @@
-// Get modal elements
+
 var express = require('express');
 var cart =require("../model/cartModel")
 var router = express.Router();
 var shipping =require("../model/shippingModel")
-/* GET users listing. */
 router.get('/', async function(req, res, next) {
     const {token}=req.cookies;
     const address=await shipping.findOne({id:token}) ;
@@ -15,7 +14,5 @@ const subtotal = data.reduce(
 
 const add=address.city+","+address.pincode+","+address.state+","+address.country;
 res.render('checkOut',{subtotal:subtotal,add:add})
-  
 });
-
 module.exports = router;
