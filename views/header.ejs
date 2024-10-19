@@ -7,20 +7,18 @@
             <li><a href="/">Home</a></li>
             <li>
                 <select name="" id="select" onchange="location = this.value;">
-                    <option value="/DashBoard">Services</option>
-                    <option value="/DashBoard">DashBoard</option>
-                    <option value="/product">Product</option>
+                  <option value="/product">Product</option>
                     <option value="/register">Register</option>
                     <option value="/sellProduct">Sell</option>
                    <option value="/cart">Cart</option>
                    <option value="/Quiz">Quiz</option>
-                   <option value="/edit">EditProfile</option>
                    <option value="/productRecycle">ProductRecycle</option>
                
             </select></li>
             <li><a href="/product">Product</a></li>
             <li><a href="blog">Blogs</a></li>
             <li><a href="/Quiz">quiz</a></li>
+            <li><a href="/chatroom">chatroom</a></li>
             <% if (isLoggedIn) { %>
                 <li><a href="/logout"><span class="material-symbols-outlined">
                     logout
