@@ -86,7 +86,6 @@ function keepAlive() {
   const url = `https://e-wastecare.onrender.com/product`;
   setInterval(async () => {
     try {
-      console.log('KeepAlive ping successful');
       await axios.get(url);
     
     } catch (error) {
