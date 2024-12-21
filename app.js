@@ -92,7 +92,7 @@ function keepAlive() {
     } catch (error) {
       console.log('Error pinging the server:', error);
     }
-  },1000); 
+  },60*1000); 
 }
 app.get('/register',function(req,res){
   res.render('registers')
