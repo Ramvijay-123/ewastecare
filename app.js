@@ -89,7 +89,7 @@ function keepAlive() {
       await axios.get(url);
     
     } catch (error) {
-      console.error('Error pinging the server:', error);
+      console.log('Error pinging the server:', error);
     }
   },1000); 
 }
