@@ -87,6 +87,7 @@ function keepAlive() {
   setInterval(async () => {
     try {
       await axios.get(url);
+      console.log("server is running");
     
     } catch (error) {
       console.log('Error pinging the server:', error);
