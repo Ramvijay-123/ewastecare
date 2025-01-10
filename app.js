@@ -90,7 +90,7 @@ function keepAlive() {
       console.log("server is running");
     
     } catch (error) {
-      console.log('Error pinging the server:', error);
+      console.log('Error pinging the server:');
     }
   },60*1000); 
 }
