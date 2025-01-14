@@ -113,6 +113,7 @@ async function add() {
         JSAlert.alert(data.data, null, JSAlert.Icons.Success).dismissIn(1000 * 1);
     }
     else{
+        console.log(data);
         JSAlert.alert('Error adding item to cart. Please log in.', null, JSAlert.Icons.Error)
             .dismissIn(1000 * 1)
             .then(() => {
